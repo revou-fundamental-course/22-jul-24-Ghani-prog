@@ -1,38 +1,41 @@
-/*Ini css
+/* Reset and general styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
 
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     color: #333;
+    background: #fcfeff;
 }
 
 /* Header and Navigation */
 header {
-    background-color: #465f5d;
+    background: linear-gradient(#8e8ec4, #1cb5e0);
     padding: 1rem;
-    margin-bottom: 5px;
     border-radius: 10px;
+    margin-bottom: 5px;
+    
+}
 
+.logo {
+    margin-right: 650px;
+    text-decoration: solid;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 25px;background: -webkit-linear-gradient(rgb(237, 29, 158), rgb(63, 112, 247));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
 }
 
 nav ul {
     list-style-type: none;
     display: flex;
-    justify-content: right;
-    background-color: #a89a93;
-}
-.logo {
-    border-radius: 10px;
-    margin-right: 680px;
-    justify-content: flex-start;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 30px;
-    
+    justify-content: center;
 }
 
 nav ul li {
@@ -41,7 +44,7 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #333;
+    color: #f2f7f8;
 }
 
 /* Banner */
@@ -49,6 +52,7 @@ nav ul li a {
     position: relative;
     height: 400px;
     overflow: hidden;
+    border-radius: 10px;
 }
 
 .banner-slide {
@@ -57,18 +61,23 @@ nav ul li a {
     left: 0;
     width: 100%;
     height: 100%;
-    opacity: 0;
-    transition: opacity 0.5s ease-in-out;
-}
-
-.banner-slide.active {
-    opacity: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .banner-slide img {
+    position: absolute;
+    top: 0;
+    left: 0px;
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: fill;
+    z-index: -1;
 }
 
 /* Contact Form */
@@ -76,8 +85,8 @@ nav ul li a {
     max-width: 400px;
     margin: 2rem auto;
     padding: 1rem;
-    background-color: #f4f4f4;
     border-radius: 5px;
+    background: linear-gradient(#bebee7, #1cb5e0);
 }
 
 .contact-form h2 {
@@ -108,16 +117,17 @@ nav ul li a {
 }
 
 .package-item {
-    background-color: #ec4848;
+    background-color: #f24e4e;
     padding: 1rem;
     border-radius: 5px;
 }
 
 /* Call to Action Section */
 #call-action {
-    background-color: #a89a93;
+    background-color: #635050;
     text-align: center;
     padding: 2rem;
+    color:aliceblue
 }
 
 #call-action button {
@@ -128,7 +138,63 @@ nav ul li a {
     border: none;
     cursor: pointer;
 }
+/* Call to Action Section */
+#call-action {
+    background-color: #8aa4b3;
+    text-align: center;
+    padding: 3rem 1rem;
+    border-top: 2px solid #a89a93;
+    border-bottom: 2px solid #a89a93;
+}
 
+#call-action h2 {
+    color: #ec4848;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+#call-action p {
+    max-width: 800px;
+    margin: 1rem auto;
+    line-height: 1.6;
+}
+
+#call-action ul {
+    list-style-type: none;
+    padding: 0;
+    max-width: 600px;
+    margin: 2rem auto;
+    text-align: left;
+}
+
+#call-action ul li {
+    margin-bottom: 0.5rem;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+#call-action ul li:before {
+    content: '✓';
+    color: #ec4848;
+    position: absolute;
+    left: 0;
+}
+
+#call-action button {
+    margin-top: 1rem;
+    padding: 0.75rem 1.5rem;
+    font-size: 1.1rem;
+    background-color: #ec4848;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#call-action button:hover {
+    background-color: #d63c3c;
+}
 /* Footer */
 footer {
     background-color: #333;

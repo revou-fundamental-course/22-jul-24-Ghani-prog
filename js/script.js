@@ -5,9 +5,8 @@ let currentSlide = 0;
 
 function showSlide(index) {
     slides.forEach((slide, i) => {
-        slide.classList.remove('active');
+        slide.style.display = i === index ? 'flex' : 'none';
     });
-    slides[index].classList.add('active');
 }
 
 function nextSlide() {
@@ -16,12 +15,12 @@ function nextSlide() {
 }
 
 // Change slide every 5 seconds
-setInterval(nextSlide, 5000);
+setInterval(nextSlide, 4000);
 
 // Show the first slide initially
 showSlide(currentSlide);
 
-// Form validation (remains the same as before)
+// Form validation
 const form = document.getElementById('contactForm');
 
 form.addEventListener('submit', function(event) {
@@ -55,6 +54,11 @@ form.addEventListener('submit', function(event) {
     alert('Form submitted successfully!');
     form.reset();
 });
+
+function scrollToContactForm() {
+    const contactForm = document.querySelector('.contact-form');
+    contactForm.scrollIntoView({ behavior: 'smooth' });
+}
 
 function isValidEmail(email) {
     // Basic email validation regex
