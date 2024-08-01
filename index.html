@@ -1,13 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css\style.css">
+    <title>Ghani Travel</title>
+    <link rel="stylesheet" href="22-jul-24-Ghani-prog\css">
 </head>
 <body>
-    
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#package">Our Package</a></li>
+                <li><a href="#call-action">Call to Action</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <div class="banner">
+                <div class="banner-slide active">
+                    <img src="https://onelifeadventures.com/wp-content/uploads/2021/10/bali_gates.jpg" alt="Travel destination">
+                </div>
+                <div class="banner-slide">
+                    <img src="https://itoen-ultrajaya.co.id/wp-content/uploads/2022/05/Featured-Image-gunungfreepik-1024x683.jpg" alt="Explore Japan">
+                </div>
+                <div class="banner-slide">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYmIvuRX92OC9XqJmiN5RyN2CxbDDcUuuq-A&s" alt="Vibrant Singapore">
+                </div>
+            </div>
+
+            <div class="contact-form">
+                <h2>Contact Us</h2>
+                <form id="contactForm">
+                    <input type="text" id="name" placeholder="Your Name" required>
+                    <input type="email" id="email" placeholder="Email Address" required>
+                    <select id="destination" required>
+                        <option value="">What are you interested in?</option>
+                        <option value="bali">Bali</option>
+                        <option value="japan">Japan</option>
+                        <option value="singapore">Singapore</option>
+                    </select>
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2024 Ghani Travel Agency. All rights reserved.</p>
+    </footer>
+
+    <script src="22-jul-24-Ghani-prog\js"></script>
 </body>
 </html>

@@ -1,1 +1,154 @@
 /*Ini css
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Header and Navigation */
+header {
+    background-color: #465f5d;
+    padding: 1rem;
+    margin-bottom: 5px;
+    border-radius: 10px;
+
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: right;
+    background-color: #a89a93;
+}
+.logo {
+    border-radius: 10px;
+    margin-right: 680px;
+    justify-content: flex-start;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 30px;
+    
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* Banner */
+.banner {
+    position: relative;
+    height: 400px;
+    overflow: hidden;
+}
+
+.banner-slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.banner-slide.active {
+    opacity: 1;
+}
+
+.banner-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Contact Form */
+.contact-form {
+    max-width: 400px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+}
+
+.contact-form h2 {
+    margin-bottom: 1rem;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form button {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+}
+
+/* Package Section */
+#package {
+    padding: 2rem;
+}
+
+.package-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+}
+
+.package-item {
+    background-color: #ec4848;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+/* Call to Action Section */
+#call-action {
+    background-color: #a89a93;
+    text-align: center;
+    padding: 2rem;
+}
+
+#call-action button {
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 0.5rem 0;
+    }
+
+    .banner {
+        height: 300px;
+    }
+}
